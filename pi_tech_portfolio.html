@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PI Tech Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --accent-color: #007BFF;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h1, h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "✔ ";
+      color: var(--accent-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eee;
+      font-size: 0.9rem;
+    }
+
+    .contact a {
+      color: var(--accent-color);
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+
+    .toggle-theme {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #ccc;
+      border: none;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+
+    .dark {
+      --bg-color: #121212;
+      --text-color: #eee;
+      --accent-color: #1e90ff;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+  <header>
+    <h1>PI Tech</h1>
+    <p>Creative Professional Portfolio</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I am a passionate and versatile creative professional skilled in graphic design, photo and video editing, data operations, and visual storytelling. My goal is to bring impactful ideas to life using the right tools and techniques.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Premiere Pro</li>
+        <li>Lightroom</li>
+        <li>Photoshop</li>
+        <li>MySQL</li>
+        <li>Power BI</li>
+        <li>Excel</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>Brand Identity Design – Logo and visual identity for a startup</li>
+        <li>Data Dashboard – Power BI dashboard for sales analysis</li>
+        <li>Video Promo – Short promotional video edited in Premiere Pro</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Add your links here:</p>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Email</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 PI Tech. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
